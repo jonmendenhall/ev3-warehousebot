@@ -1,0 +1,30 @@
+{
+    "robot": {
+        "state": "start",
+        "carrying": null
+    },
+    "warehouse": {
+        "pallets": [
+            {
+                "id": 1,
+                "location": "slot_1",
+                "contents": null
+            },
+            {
+                "id": 2,
+                "location": "slot_2",
+                "contents": null
+            },
+            {
+                "id": 3,
+                "location": "slot_3",
+                "contents": null
+            },
+            {
+                "id": 4,
+                "location": "slot_4",
+                "contents": null
+            }
+        ]
+    }
+}

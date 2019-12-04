@@ -1,0 +1,244 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "warehouse bot",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PickupIntent",
+                    "slots": [
+                        {
+                            "name": "Location",
+                            "type": "LocationType"
+                        },
+                        {
+                            "name": "Item",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "pickup the {Item}",
+                        "get the crate in {Location}",
+                        "get the pallet in {Location}",
+                        "pickup the crate at {Location}",
+                        "pickup the pallet at {Location}",
+                        "get the crate at {Location}",
+                        "get the pallet at {Location}",
+                        "fetch the pallet of {Item}",
+                        "get the pallet of {Item}",
+                        "pickup the pallet of {Item}",
+                        "pickup the crate of {Item}",
+                        "load from {Location}",
+                        "fetch the crate of {Item}",
+                        "get the crate of {Item}",
+                        "get the crate with {Item}",
+                        "get the pallet with {Item}",
+                        "fetch the {Item}",
+                        "get the {Item}",
+                        "get  {Location}",
+                        "pickup  {Location}",
+                        "fetch  {Location}",
+                        "pickup from  {Location} "
+                    ]
+                },
+                {
+                    "name": "DropIntent",
+                    "slots": [
+                        {
+                            "name": "Location",
+                            "type": "LocationType"
+                        }
+                    ],
+                    "samples": [
+                        "Deliver to  {Location}",
+                        "Drop at {Location}",
+                        "Unload at {Location}"
+                    ]
+                },
+                {
+                    "name": "MoveIntent",
+                    "slots": [
+                        {
+                            "name": "Location",
+                            "type": "LocationType"
+                        }
+                    ],
+                    "samples": [
+                        "drive to  {Location}",
+                        "move to {Location}"
+                    ]
+                },
+                {
+                    "name": "SetContentsIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "this contains {Item}",
+                        "set the contents of this crate to {Item}",
+                        "set the contents of this pallet to {Item}",
+                        "this is the pallet of {Item}",
+                        "this is the crate of {Item}",
+                        "this is the {Item} pallet",
+                        "this pallet has {Item}",
+                        "this is the {Item} crate",
+                        "this crate has {Item}",
+                        "set the pallet to {Item}",
+                        "set the contents to {Item}",
+                        "set contents to {Item}",
+                        "set this to {Item}",
+                        "set this crate to {Item}"
+                    ]
+                },
+                {
+                    "name": "SearchIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "Location",
+                            "type": "LocationType"
+                        }
+                    ],
+                    "samples": [
+                        "What's in {Location}",
+                        "Where the {Item} is",
+                        "Where the {Item} are",
+                        "What is in this crate",
+                        "What is in this pallet",
+                        "What does this pallet have",
+                        "What does this crate have",
+                        "What is in the pallet at {Location}",
+                        "What is in the crate at {Location}",
+                        "What are the contents of {Location}",
+                        "What is in {Location}",
+                        "What does {Location} have",
+                        "Which slot has the crate of {Item}",
+                        "Which slot has the pallet of {Item}",
+                        "What slot is the crate of {Item} in",
+                        "What slot is the pallet of {Item} in",
+                        "What slot are the {Item} in",
+                        "Which slot has {Item}",
+                        "Where is the crate of {Item} located",
+                        "Where is the crate of {Item}",
+                        "Where is the pallet of {Item} located",
+                        "Where is the pallet of {Item}",
+                        "Where are the {Item} located",
+                        "Where are the {Item}"
+                    ]
+                },
+                {
+                    "name": "ResetIntent",
+                    "slots": [],
+                    "samples": [
+                        "reload the data",
+                        "clear the data",
+                        "clear stored data",
+                        "reset"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LocationType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "slot out"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot in"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 12"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 11"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 10"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 9"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 8"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 7"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 6"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 5"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 4"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slot 1"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
